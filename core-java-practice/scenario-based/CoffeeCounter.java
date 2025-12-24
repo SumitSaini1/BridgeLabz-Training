@@ -42,7 +42,14 @@ public class CoffeeCounter {
             sc.nextLine(); //clear buffer
 
             totalPrice = Gst + (cofeePrice * quantity); // Total sum of CofeePrice inculding Gst
-            System.out.println("Total Bill: " + totalPrice);
+            System.out.println("----------- COFFEE BILL -----------");
+            System.out.println("Coffee Type : " + coffeeType);
+            System.out.println("Unit Price  : " + cofeePrice);
+            System.out.println("Quantity    : " + quantity);
+            System.out.println("-----------------------------------");
+            System.out.println("Total Bill  : " + totalPrice);
+            System.out.println("-----------------------------------");
+            
 
         }
         return totalPrice;
