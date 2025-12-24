@@ -1,21 +1,20 @@
-# Training – Capgemini (BridgeLabz)
+# Training –(BridgeLabz)
 
 ## 👤 Trainee Details
 - **Name:** Sumit Saini
-- **Program:** Capgemini Training
-- **Training Partner:** BridgeLabz
+- **Training :** BridgeLabz
 - **Technology:** Java
 - **Duration:** 4-5 Months
 
 ## 📌 Objective
-This repository contains daily practice programs, assignments, and scenario-based problems completed as part of the Capgemini Left Shift Training conducted by BridgeLabz.
+This repository contains daily practice programs, assignments, and scenario-based problems completed as part of the conducted by BridgeLabz.
 
 The goal is to strengthen core programming concepts, problem-solving skills, and industry-level coding practices.
 
 ## 🛠 Technologies Used
 - Java (Core Java)
 - Git & GitHub
-- VS Code / Notepad ++
+- Notepad ++
 
 ---
 
@@ -53,7 +52,6 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 
 ## ✍ Author
 **Sumit Saini**  
-Capgemini  Trainee
-Training Partner – BridgeLabz
+Training – BridgeLabz
 
 
