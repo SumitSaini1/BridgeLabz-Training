@@ -47,6 +47,17 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
   - for, while, do-while loops
 - Solved practice assignments based on control flow
 
+### Day 4–5 – Java Array Concepts
+- Learned Java Array concepts
+- Topics covered:
+  - One-dimensional arrays
+  - Two-dimensional arrays
+- Solved practice assignments:
+  - Level 1
+  - Level 2
+- Implemented programs using 2D arrays
+
+
 
 ---
 
