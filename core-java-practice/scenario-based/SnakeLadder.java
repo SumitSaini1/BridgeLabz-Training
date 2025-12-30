@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SnackLadder {
+public class SnakeLadder {
     // case:1
     public static int generateNumber() {
         // generate random number between 1 to 6
