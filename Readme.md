@@ -16,8 +16,6 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Git & GitHub
 - Notepad ++
 
-
-
 ## 🧠 Concepts Covered
   ## core java:
     - Variables & Data Types
@@ -47,7 +45,7 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
   - for, while, do-while loops
 - Solved practice assignments based on control flow
 
-### Day 4–5 – Java Array Concepts
+### Day 4 – Java Array Concepts
 - Learned Java Array concepts
 - Topics covered:
   - One-dimensional arrays
@@ -57,7 +55,32 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
   - Level 2
 - Implemented programs using 2D arrays
 
+### Day 5 – String Concepts
+- Learned String concepts in Java
+- Topics covered:
+  - String creation and manipulation
+  - String methods
+  - String immutability
+- Solved string-based practice assignments:
+  - Level 1
+  - Level 2
+  - Level 3
+- Solved 2 scenario-based string questions
 
+### Day 6 – Methods
+- Learned methods in Java
+- Topics covered:
+  - Method declaration and definition
+  - Method parameters and return types
+  - Method calling
+- Solved practice assignments based on methods
+- Solved scenario-based questions using methods
+
+### ✅ Week 1 Completion Status
+- Successfully completed Week 1 of training
+- Covered Java fundamentals and core concepts
+- Solved practice assignments and scenario-based problems
+- Built a foundation in Java programming
 
 ---
 
