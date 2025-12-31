@@ -13,17 +13,6 @@ class CartItem {
         System.out.println("Added " + qty + " of " + itemName + " to the cart.");
     }
 
-    // method to remove item quantity 
-    void removeItem(int qty) {
-
-        // check if enough quantity 
-        if (quantity >= qty) {
-            quantity = quantity - qty;
-            System.out.println("Removed " + qty + " of " + itemName + " from the cart.");
-        } else {
-            System.out.println("Cannot remove item. insufficient quantity.");
-        }
-    }
 
     // method to calculate 
     void displayTotalCost() {
@@ -52,10 +41,9 @@ class CartItem {
         // add items to cart
         cart.addItem(2);
 
-        // remove item from cart
-        cart.removeItem(1);
+       
 
         // display total cost
         cart.displayTotalCost();
     }
-}
+} 

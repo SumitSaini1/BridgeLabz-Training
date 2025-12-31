@@ -52,7 +52,7 @@ class BankAccount {
         // withdraw money
         account.withdraw(100.0);
 
-        // try to withdraw
+        
         account.withdraw(1000.0);
     }
 }

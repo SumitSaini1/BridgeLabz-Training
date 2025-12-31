@@ -11,7 +11,7 @@ class MovieTicket {
 
         // check if ticket is already booked
         if (isBooked) {
-            System.out.println("House full!!! sorry..... Ticket already booked");
+            System.out.println("House full Ticket already booked");
             return;
         }
 
