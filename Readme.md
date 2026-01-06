@@ -83,6 +83,56 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Built a foundation in Java programming
 
 ---
+## 📅 Week 2 Progress
+
+### Day 1 – Scenario-Based Practice
+- Solved scenario-based practice problems
+
+### Day 2 – OOP Fundamentals
+- Learned OOP fundamentals
+- Understood Procedural Programming
+- Solved Snake and Ladder game scenario
+- Submitted Java class and object assignments
+
+### Day 3 – Constructors & Access Modifiers
+- Learned Java constructor concepts
+- Understood instance and class variables
+- Learned access modifier concepts
+- Solved assignments and submitted practice work
+
+### Day 4 – this, final & instanceof
+- Learned `this` keyword concept
+- Learned `final` keyword concept
+- Learned `instanceof` operator concept
+- Submitted assignments based on these concepts
+- Solved 2 scenario-based problems
+
+### Day 5 – Object Modeling & Class Diagram
+- Learned object modeling concepts
+- Understood class diagram
+- Solved assignments based on object modeling
+- Solved 2 scenario-based problems
+
+### Day 6 – Inheritance
+- Learned inheritance concept in Java
+- Solved inheritance-based assignments
+- Submitted practice work
+
+---
+## 📅 Week 3 Progress
+
+### Day 1 – Encapsulation, Abstraction & Polymorphism
+- Learned encapsulation concept
+- Learned interface and abstract class concepts
+- Learned polymorphism concept
+- Submitted assignments based on these concepts
+- Solved 2 scenario-based problems
+
+### Day 2 – Scenario Practice & LeetCode
+- Solved scenario-based practice problems
+- Solved LeetCode practice problems
+- Submitted practice solutions
+
 
 ## ✍ Author
 **Sumit Saini**  
