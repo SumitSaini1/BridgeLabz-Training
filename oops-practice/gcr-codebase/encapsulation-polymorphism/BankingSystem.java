@@ -129,7 +129,7 @@ public class BankingSystem {
 
         // polymorphism
         BankAccount acc1 = new SavingsAccount(101, "Rahul", 50000);
-        BankAccount acc2 = new CurrentAccount(102, "Amit", 80000);
+        BankAccount acc2 = new CurrentAccount(102, "Amit", 800000);
 
         acc1.deposit(5000);
         acc1.withdraw(2000);

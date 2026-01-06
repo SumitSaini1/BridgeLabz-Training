@@ -126,7 +126,7 @@ public class RideHailingApplication {
         // polymorphism
         Vehicle v1 = new Car(101, "Rahul", 15);
         Vehicle v2 = new Bike(102, "Amit", 10);
-        Vehicle v3 = new Auto(103, "Suresh", 12);
+        Vehicle v3 = new Auto(103, "Suresh", 11);
 
         calculateRideFare(v1, 10);
         calculateRideFare(v2, 10);

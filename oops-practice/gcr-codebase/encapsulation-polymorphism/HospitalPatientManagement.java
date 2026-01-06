@@ -130,7 +130,7 @@ public class HospitalPatientManagement {
 
         // polymorphism
         Patient p1 = new InPatient(101, "Rahul", 35, 5);
-        Patient p2 = new OutPatient(102, "Amit", 28);
+        Patient p2 = new OutPatient(102, "Amit", 27);
 
         // add medical records
         ((MedicalRecord) p1).addRecord("Fever", "Admitted for observation");

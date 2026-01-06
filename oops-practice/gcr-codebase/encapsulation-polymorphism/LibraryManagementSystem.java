@@ -129,7 +129,7 @@ public class LibraryManagementSystem {
 
         // polymorphism
         LibraryItem item1 = new Book(101, "Java Basics", "James Gosling");
-        LibraryItem item2 = new Magazine(102, "Tech Monthly", "Editorial Team");
+        LibraryItem item2 = new Magazine(102, "Tech Monthly", "Editorial Teams");
         LibraryItem item3 = new DVD(103, "OOP Concepts", "Tech Media");
 
         item1.getItemDetails();

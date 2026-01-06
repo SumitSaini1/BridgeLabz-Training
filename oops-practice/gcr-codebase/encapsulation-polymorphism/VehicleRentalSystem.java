@@ -101,7 +101,7 @@ public class VehicleRentalSystem {
 
         vehicles.add(new Car("CAR101", 1500, "CAR-INS-11"));
         vehicles.add(new Bike("BIKE202", 500, "BIKE-INS-22"));
-        vehicles.add(new Truck("TRUCK303", 3000, "TRUCK-INS-33"));
+        vehicles.add(new Truck("TRUCK303", 3000, "TRUCK-INS-35"));
 
         int rentalDays = 3;
 

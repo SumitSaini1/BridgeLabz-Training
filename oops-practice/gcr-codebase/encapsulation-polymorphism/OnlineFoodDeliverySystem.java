@@ -118,7 +118,7 @@ public class OnlineFoodDeliverySystem {
 
         // polymorphism
         FoodItem item1 = new VegItem("Paneer Butter Masala", 250, 2);
-        FoodItem item2 = new NonVegItem("Chicken Biryani", 300, 1);
+        FoodItem item2 = new NonVegItem("Chicken Biryani", 300, 3);
 
         processOrder(item1);
         processOrder(item2);
