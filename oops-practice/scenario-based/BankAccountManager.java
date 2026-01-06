@@ -8,7 +8,7 @@ class BankAccount {
         balance += amount;
 
     }
-
+    // withdraw money
     public void withdrawAmount(double withdraw) {
 
         if (withdraw > balance) {
@@ -19,24 +19,26 @@ class BankAccount {
         }
 
     }
-
+    // get balance 
     public double getBalance() {
         return balance;
     }
 
 }
-
+// main class
 public class BankAccountManager {
 
     public static void main(String[] args) {
+        // create object 
         Scanner input = new Scanner(System.in);
         BankAccount obj = new BankAccount();
 
         System.out.println("Enter amount to deposit:");
         double amount = input.nextDouble();
+        // check amount 
         while (amount <= 0) {
             System.out.println("Enter  amount again:");
-
+            // re enter 
             amount = input.nextDouble();
         }
 
@@ -54,6 +56,7 @@ public class BankAccountManager {
 
         double balance = obj.getBalance();
         System.out.println("Balance:" + balance);
+        input.close();
 
     }
 

@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class TemperatureAnalyzer {
+	// method to find average
 	public static float[] analyzeTemperature(float[][] temperature) {
 		float[] average = new float[7];
 		for (int i = 0; i < temperature.length; i++) {
@@ -18,6 +19,7 @@ public class TemperatureAnalyzer {
 	}
 
 	public static void main(String[] args) {
+		// scanner object
 		Scanner input = new Scanner(System.in);
 		float[][] temperature = new float[7][24];
 		for (int i = 0; i < temperature.length; i++) {
@@ -42,7 +44,7 @@ public class TemperatureAnalyzer {
 		}
 		System.out.println("Hottest Day: Day " + (hotest + 1));
 		System.out.println("Coldest Day: Day " + (coldest + 1));
-
+		input.close();
 	}
 
 }
