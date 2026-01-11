@@ -133,6 +133,43 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Solved LeetCode practice problems
 - Submitted practice solutions
 
+### Day 3 – Data Structures & Linked List
+- Introduction to Data Structures
+- Learned Linked List concept
+- Understood approach towards story-based problems
+
+### Day 4 – Linked List Assignments
+- Solved linked list based assignment problems
+- Submitted linked list practice assignments
+
+### Day 5 – OOPS Scenario-Based Problems & Collections
+- Solved 3 OOPS scenario-based problems
+- Implemented CRUD-based applications:
+  - Flight Booking System (CRUD)
+  - Hospital Management System (CRUD)
+- Learned basic concepts of:
+  - Stack
+  - Queue
+  - HashMap
+  - Hashing
+
+### ✅ Week 3 Completion Status
+- Successfully completed Week 3
+- Strengthened understanding of OOPS concepts
+- Gained hands-on experience with data structures
+- Implemented real-world CRUD applications
+- Improved problem-solving using scenario-based approaches
+
+### 🔑 Key Topics Covered in Week 3
+- Encapsulation
+- Abstraction (Interface & Abstract Class)
+- Polymorphism
+- Linked List
+- Stack & Queue
+- HashMap & Hashing
+- CRUD Applications
+
+
 
 ## ✍ Author
 **Sumit Saini**  
