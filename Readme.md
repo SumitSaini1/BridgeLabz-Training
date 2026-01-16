@@ -169,6 +169,38 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - HashMap & Hashing
 - CRUD Applications
 
+----
+## 📅 Week 4 Progress (In Progress)
+
+### Day 1 – Scenario-Based Applications
+- Solved real-world scenario-based problems:
+  - E-commerce Order Management System
+  - Hotel Reservation System
+  - Inventory Management System
+- Focused on applying OOPS and problem-solving concepts to real-life use cases
+
+### Day 2 – GitHub Scenarios, Stack & Queue
+- Learned GitHub scenarios:
+  - How merge conflicts occur
+  - How to resolve merge conflicts
+- Solved scenario-based practice problems:
+  - Student Course Registration System
+  - Digital Wallet System
+  - Online Voting System
+- Practiced problems based on:
+  - Stack
+  - Queue
+
+### Day 3 – HashMap & Sorting
+- Solved problems based on HashMap
+- Learned sorting concepts
+- Practiced assignment problems based on sorting
+- Applied HashMap and sorting to improve solution efficiency
+
+### ⏳ Week 4 Status
+- Week 4 is currently in progress
+- Remaining days will be updated after completion
+
 
 
 ## ✍ Author
