@@ -1,0 +1,2 @@
+Java is a programming Language.
+Java is a platform independent.
