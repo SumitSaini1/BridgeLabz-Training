@@ -176,7 +176,6 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Solved real-world scenario-based problems:
   - E-commerce Order Management System
   - Hotel Reservation System
-  - Inventory Management System
 - Focused on applying OOPS and problem-solving concepts to real-life use cases
 
 ### Day 2 – GitHub Scenarios, Stack & Queue
@@ -185,7 +184,7 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
   - How to resolve merge conflicts
 - Solved scenario-based practice problems:
   - Student Course Registration System
-  - Digital Wallet System
+  - Inventory Management System
   - Online Voting System
 - Practiced problems based on:
   - Stack
@@ -195,7 +194,6 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Solved problems based on HashMap
 - Learned sorting concepts
 - Practiced assignment problems based on sorting
-- Applied HashMap and sorting to improve solution efficiency
 
 ### ⏳ Week 4 Status
 - Week 4 is currently in progress
