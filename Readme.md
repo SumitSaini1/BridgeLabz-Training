@@ -195,10 +195,40 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Learned sorting concepts
 - Practiced assignment problems based on sorting
 
-### ⏳ Week 4 Status
-- Week 4 is currently in progress
-- Remaining days will be updated after completion
+### Day 4 – Searching Algorithms & 4-Layer Architecture
+- Learned Linear Search concept
+- Learned Binary Search concept
+- Understood 4-Layer Architecture in Java:
+  - Presentation Layer
+  - Service Layer
+  - Repository Layer
+  - Model Layer
 
+### Day 5 – Search Algorithm Practice
+- Solved practice problems based on:
+  - Linear Search
+  - Binary Search
+- Improved problem-solving and algorithm understanding
+
+### Day 6 – Address Book Use Cases & OOPS Revision
+- Solved Address Book problem use cases
+- Applied concepts using layered architecture
+- Revised core OOPS concepts
+
+
+### ✅ Week 4 Completion Status
+- Successfully completed Week 4
+- Learned searching algorithms:
+  - Linear Search
+  - Binary Search
+- Understood 4-Layer Architecture in Java
+- Practiced stack, queue and sorting concepts
+- Solved real-world scenario-based applications
+- Implemented Address Book use cases
+- Revised and strengthened core OOPS concepts
+
+
+---
 
 
 ## ✍ Author
