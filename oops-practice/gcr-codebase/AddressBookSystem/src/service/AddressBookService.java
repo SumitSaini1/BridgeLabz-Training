@@ -8,7 +8,7 @@ import repository.ContactRepository;
 
 public class AddressBookService {
 	ContactRepository contactRepo = new ContactRepository();
-	AddressBookRepository bookRepo=new AddressBookRepository();
+	AddressBookRepository bookRepo = new AddressBookRepository();
 
 	// // Input Validation input names
 	public boolean validateFirstName(String firstName) {
@@ -40,16 +40,16 @@ public class AddressBookService {
 	// UC-6
 
 	// add Address Book
-	public boolean createAddressBook(String name){
-		boolean result=bookRepo.addAddressBook(name);
-		if(result){
+	public boolean createAddressBook(String name) {
+		boolean result = bookRepo.addAddressBook(name);
+		if (result) {
 			return true;
 		}
 		return false;
 	}
 
 	// Add Conatct UC 2
-	public boolean addContacts(String bookName,String firstName, String lastName, String address,
+	public boolean addContacts(String bookName, String firstName, String lastName, String address,
 			String city, String state, String zip,
 			String phoneNumber, String email) {
 
@@ -58,35 +58,39 @@ public class AddressBookService {
 		} else if (!validatePhoneNumber(phoneNumber)) {
 			return false;
 		}
-		AddressBook book=bookRepo.getAddressBook(bookName);
-
-		// Duplicate Check
-		for (Contact c : book.getContacts()) {
-			if (c.getFirstName().equalsIgnoreCase(firstName) && c.getLastName().equalsIgnoreCase(lastName)) {
-				return false;
-			}
+		AddressBook book = bookRepo.getAddressBook(bookName);
+		if (book == null) {
+			System.out.println("Address Book does not exist");
+			return false;
 		}
+	
 
+		
 		Contact contact = new Contact(firstName, lastName, address,
 				city, state, zip,
 				phoneNumber, email);
-
 		
+		// UC(7)
+		if (book.getContacts().contains(contact)) {
+			System.out.println("Duplicate Contact Found!");
+			return false;
+		}
 		// store contact
 
-		contactRepo.addContact(book.getContacts(),contact);
+		contactRepo.addContact(book.getContacts(), contact);
 		return true;
 
 	}
 
 	// Edit Contact By Name (UC 3)
-	public boolean editContactByName(String bookName,String firstName, String lastName, String fieldToEdit, String newValue) {
+	public boolean editContactByName(String bookName, String firstName, String lastName, String fieldToEdit,
+			String newValue) {
 
 		if (!validateFirstName(firstName) || !validateLastName(lastName)) {
 			return false;
 		}
 		AddressBook book = bookRepo.getAddressBook(bookName);
-		if (book==null || book.getContacts().isEmpty()) {
+		if (book == null || book.getContacts().isEmpty()) {
 			return false;
 		}
 		for (Contact c : book.getContacts()) {
@@ -138,25 +142,23 @@ public class AddressBookService {
 	}
 
 	// Use Case (UC)4
-	public boolean deletePersonContact(String bookName,String firstName,String lastName){
+	public boolean deletePersonContact(String bookName, String firstName, String lastName) {
 		if (!validateFirstName(firstName) || !validateLastName(lastName)) {
 			return false;
 		}
 		AddressBook book = bookRepo.getAddressBook(bookName);
-		if(book==null ||book.getContacts().isEmpty()){
+		if (book == null || book.getContacts().isEmpty()) {
 			return false;
 		}
-		
-		boolean result=contactRepo.deletePersonContact(book.getContacts(),firstName,lastName);
+
+		boolean result = contactRepo.deletePersonContact(book.getContacts(), firstName, lastName);
 		return result;
 
-
-		
 	}
 
 	public void displayContacts(String bookName) {
 		AddressBook book = bookRepo.getAddressBook(bookName);
-		if (book==null || book.getContacts().isEmpty()) {
+		if (book == null || book.getContacts().isEmpty()) {
 			System.out.println("No contacts found");
 			return;
 		}

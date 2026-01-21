@@ -4,7 +4,6 @@ package models;
 
 public class Contact {
 
-    
     private String firstName;
     private String lastName;
     private String address;
@@ -14,14 +13,12 @@ public class Contact {
     private String phoneNumber;
     private String email;
 
-    
     public Contact() {
     }
 
-
     public Contact(String firstName, String lastName, String address,
-                   String city, String state, String zip,
-                   String phoneNumber, String email) {
+            String city, String state, String zip,
+            String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -31,7 +28,6 @@ public class Contact {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
-
 
     public String getFirstName() {
         return firstName;
@@ -96,6 +92,7 @@ public class Contact {
     public void setEmail(String email) {
         this.email = email;
     }
+
     @Override
     public String toString() {
         return "Contact {" +
@@ -110,8 +107,23 @@ public class Contact {
                 '}';
     }
 
+    // UC -7
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
 
+        Contact other = (Contact) obj;
 
-    
-   
+        return firstName.equalsIgnoreCase(other.firstName) &&
+                lastName.equalsIgnoreCase(other.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return (firstName.toLowerCase() + lastName.toLowerCase()).hashCode();
+    }
+
 }
