@@ -1,10 +1,14 @@
 package service;
 
 import models.Contact;
+import models.AddressBook;
+
+import repository.AddressBookRepository;
 import repository.ContactRepository;
 
 public class AddressBookService {
-	ContactRepository repo = new ContactRepository();
+	ContactRepository contactRepo = new ContactRepository();
+	AddressBookRepository bookRepo=new AddressBookRepository();
 
 	// // Input Validation input names
 	public boolean validateFirstName(String firstName) {
@@ -33,8 +37,19 @@ public class AddressBookService {
 
 	}
 
+	// UC-6
+
+	// add Address Book
+	public boolean createAddressBook(String name){
+		boolean result=bookRepo.addAddressBook(name);
+		if(result){
+			return true;
+		}
+		return false;
+	}
+
 	// Add Conatct UC 2
-	public boolean addContacts(String firstName, String lastName, String address,
+	public boolean addContacts(String bookName,String firstName, String lastName, String address,
 			String city, String state, String zip,
 			String phoneNumber, String email) {
 
@@ -43,9 +58,10 @@ public class AddressBookService {
 		} else if (!validatePhoneNumber(phoneNumber)) {
 			return false;
 		}
+		AddressBook book=bookRepo.getAddressBook(bookName);
 
 		// Duplicate Check
-		for (Contact c : repo.getAllContacts()) {
+		for (Contact c : book.getContacts()) {
 			if (c.getFirstName().equalsIgnoreCase(firstName) && c.getLastName().equalsIgnoreCase(lastName)) {
 				return false;
 			}
@@ -54,22 +70,26 @@ public class AddressBookService {
 		Contact contact = new Contact(firstName, lastName, address,
 				city, state, zip,
 				phoneNumber, email);
+
+		
 		// store contact
-		repo.addContact(contact);
+
+		contactRepo.addContact(book.getContacts(),contact);
 		return true;
 
 	}
 
 	// Edit Contact By Name (UC 3)
-	public boolean editContactByName(String firstName, String lastName, String fieldToEdit, String newValue) {
+	public boolean editContactByName(String bookName,String firstName, String lastName, String fieldToEdit, String newValue) {
 
 		if (!validateFirstName(firstName) || !validateLastName(lastName)) {
 			return false;
 		}
-		if (repo.getAllContacts().isEmpty()) {
+		AddressBook book = bookRepo.getAddressBook(bookName);
+		if (book==null || book.getContacts().isEmpty()) {
 			return false;
 		}
-		for (Contact c : repo.getAllContacts()) {
+		for (Contact c : book.getContacts()) {
 			if (c.getFirstName().equalsIgnoreCase(firstName) && c.getLastName().equalsIgnoreCase(lastName)) {
 
 				switch (fieldToEdit) {
@@ -118,27 +138,29 @@ public class AddressBookService {
 	}
 
 	// Use Case (UC)4
-	public boolean deletePersonContact(String firstName,String lastName){
+	public boolean deletePersonContact(String bookName,String firstName,String lastName){
 		if (!validateFirstName(firstName) || !validateLastName(lastName)) {
 			return false;
 		}
-		if(repo.getAllContacts().isEmpty()){
+		AddressBook book = bookRepo.getAddressBook(bookName);
+		if(book==null ||book.getContacts().isEmpty()){
 			return false;
 		}
 		
-		boolean result=repo.deletePersonContact(firstName,lastName);
+		boolean result=contactRepo.deletePersonContact(book.getContacts(),firstName,lastName);
 		return result;
 
 
 		
 	}
 
-	public void displayContacts() {
-		if (repo.getAllContacts().isEmpty()) {
+	public void displayContacts(String bookName) {
+		AddressBook book = bookRepo.getAddressBook(bookName);
+		if (book==null || book.getContacts().isEmpty()) {
 			System.out.println("No contacts found");
 			return;
 		}
-		for (Contact c : repo.getAllContacts()) {
+		for (Contact c : book.getContacts()) {
 			System.out.println(c);
 		}
 	}
