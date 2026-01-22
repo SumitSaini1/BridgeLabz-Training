@@ -156,6 +156,25 @@ public class AddressBookService {
 
 	}
 
+		
+	public void searchPersonByCity(String city) {
+		boolean found = false;
+	
+		for (AddressBook book : bookRepo.getAllBooks().values()) {
+			for (Contact contact : book.getContacts()) {
+				if (contact.getCity().equalsIgnoreCase(city)) {
+					System.out.println("Address Book: " + book.getAddressBookName());
+					System.out.println(contact);
+					found = true;
+				}
+			}
+		}
+	
+		if (!found) {
+			System.out.println("No person found in city: " + city);
+		}
+	}
+
 	public void displayContacts(String bookName) {
 		AddressBook book = bookRepo.getAddressBook(bookName);
 		if (book == null || book.getContacts().isEmpty()) {
@@ -166,5 +185,8 @@ public class AddressBookService {
 			System.out.println(c);
 		}
 	}
+
+	
+	
 
 }

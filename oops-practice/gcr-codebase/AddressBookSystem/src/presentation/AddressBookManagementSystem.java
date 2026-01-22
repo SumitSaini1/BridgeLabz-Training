@@ -21,11 +21,11 @@ public class AddressBookManagementSystem {
 			System.out.println("4. Edit Contact ");
 			System.out.println("5. Display Contacts ");
 			System.out.println("6. Delete a Person ");
+			System.out.println("7. Search Person by City");
 
 			String firstName;
 			String lastName;
-			
-			
+
 			boolean result;
 			System.out.println("Enter a Task Number:");
 			task = input.nextInt();
@@ -58,9 +58,9 @@ public class AddressBookManagementSystem {
 				case 3:
 					// UC 2
 					if (currentBook == null) {
-                        System.out.println("Please select an Address Book first");
-                        break;
-                    }
+						System.out.println("Please select an Address Book first");
+						break;
+					}
 					System.out.print("Enter First Name: ");
 					firstName = input.nextLine();
 
@@ -86,7 +86,7 @@ public class AddressBookManagementSystem {
 					String email = input.nextLine();
 
 					// add contact
-					result = service.addContacts(currentBook,firstName,
+					result = service.addContacts(currentBook, firstName,
 							lastName,
 							address,
 							city,
@@ -101,9 +101,9 @@ public class AddressBookManagementSystem {
 				// Edit contact address
 				case 4:
 					if (currentBook == null) {
-                        System.out.println("Please select an Address Book first");
-                        break;
-                    }
+						System.out.println("Please select an Address Book first");
+						break;
+					}
 					System.out.print("Enter First Name to Edit Contact: ");
 					firstName = input.nextLine();
 
@@ -208,28 +208,36 @@ public class AddressBookManagementSystem {
 				// Display all Contacts
 				case 5:
 					if (currentBook == null) {
-                        System.out.println("Please select an Address Book first");
-                        break;
-                    }
+						System.out.println("Please select an Address Book first");
+						break;
+					}
 					service.displayContacts(currentBook);
 					break;
 				// Delete a Contact Number
 				case 6:
 					if (currentBook == null) {
-                        System.out.println("Please select an Address Book first");
-                        break;
-                    }
+						System.out.println("Please select an Address Book first");
+						break;
+					}
 					System.out.println("Enter a Person First Name to delete Contact");
 					firstName = input.nextLine();
 					System.out.println("Enter a Person Last Name to delete Contact");
 					lastName = input.nextLine();
-					result = service.deletePersonContact(currentBook,firstName, lastName);
+					result = service.deletePersonContact(currentBook, firstName, lastName);
 					if (result) {
 						System.out.println("Contact Deleted");
 					} else {
 						System.out.println("Contact Not Found");
 					}
 					break;
+				//UC 8
+				case 7:
+					System.out.print("Enter City Name: ");
+					city = input.nextLine();
+					service.searchPersonByCity(city);
+					break;
+
+				
 
 				default:
 					System.out.println("Invalid Input");
