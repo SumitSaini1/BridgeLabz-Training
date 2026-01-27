@@ -14,7 +14,7 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 ## 🛠 Technologies Used
 - Java (Core Java)
 - Git & GitHub
-- Notepad ++
+- Eclipse
 
 ## 🧠 Concepts Covered
   ## core java:
@@ -227,6 +227,39 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Implemented Address Book use cases
 - Revised and strengthened core OOPS concepts
 
+
+---
+## 📅 Week 5 Progress
+
+### Day 1 – Java Generics & Polymorphism
+- Learned Java Generics concepts
+- Solved scenario-based problems:
+  - Banking Account Hierarchy
+  - Employee Role Polymorphism
+
+### Day 2 – Generics Practice & Scenario Problems
+- Submitted practice problems on Java Generics
+- Solved scenario-based problem:
+  - Book Shelf – Library Organization Story
+
+### Day 3 – Collections Framework
+- Learned Java Collections concepts
+- Solved and submitted scenario-based problems using collections
+
+### Day 4 – Collections Practice & Exception Handling
+- Submitted collection-based practice problems
+- Learned Exception Handling concepts in Java
+
+### Day 5 – Java Streams
+- Learned Java Streams concepts
+- Solved scenario-based problems using streams
+
+### ✅ Week 5 Completion Status
+- Successfully completed Week 5
+- Gained strong understanding of Generics and Collections
+- Implemented real-world scenario-based solutions
+- Learned and applied Exception Handling
+- Used Java Streams for functional-style data processing
 
 ---
 
