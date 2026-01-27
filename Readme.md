@@ -170,7 +170,7 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - CRUD Applications
 
 ----
-## 📅 Week 4 Progress (In Progress)
+## 📅 Week 4 Progress 
 
 ### Day 1 – Scenario-Based Applications
 - Solved real-world scenario-based problems:
