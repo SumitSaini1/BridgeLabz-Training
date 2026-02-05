@@ -262,6 +262,66 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Used Java Streams for functional-style data processing
 
 ---
+## 📅 Week 6 Progress
+
+### Day 1 – Regex, JUnit & Scenario-Based Problems
+- Solved scenario-based problems such as:
+  - Lexical Twist
+- Learned Regular Expression (Regex) concepts
+- Learned JUnit testing concepts
+
+### Day 2 – Regex Practice & Scenarios
+- Submitted practice problems based on Regex
+- Solved scenario-based problems:
+  - Restaurant Table Reservation System
+  - File Backup Scheduler Scenario
+
+### Day 3 – Annotations & Reflection
+- Learned Java Annotation concepts
+- Learned Reflection concepts
+- Solved scenario-based problem:
+  - Future Logistics
+- Submitted assignments based on annotations
+
+### Day 4 – CSV Handling
+- Learned CSV data handling concepts
+- Solved CSV-based scenario problems
+
+### Day 5 – CSV Data Handling Submission
+- Submitted assignments based on CSV data handling
+- Practiced reading and writing CSV files
+
+### ✅ Week 6 Completion Status
+- Successfully completed Week 6
+- Learned Regex and JUnit testing
+- Gained experience with annotations and reflection
+- Implemented CSV data handling
+- Solved multiple real-world scenario-based problems
+---
+## 📅 Week 7 Progress 
+
+### Day 1 – JSON Data & Scenario-Based Problems
+- Solved scenario-based problem:
+  - AeroVigil Problem
+- Learned JSON data concepts
+- Started solving and submitting JSON-based assignments
+
+### Day 2 – Lambda Expressions & Functional Interfaces
+- Solved scenario-based problem:
+  - StreamBuzz
+- Learned Lambda Expression concepts
+- Learned Functional Interface concepts
+
+### Day 3 – Streams
+- Submitted assignments based on:
+  - Functional Interfaces
+  - Lambda Expressions
+- Learned Java Streams concepts
+
+### ⏳ Week 7 Status
+- Week 7 is currently in progress
+- Remaining topics and submissions will be updated
+
 
 
 ## ✍ Author
