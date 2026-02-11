@@ -21,6 +21,50 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
     - Variables & Data Types
     - Conditional Statements
     - Loops (for, while)
+    - Arrays (1D & 2D)
+  - Strings & String Manipulation
+  - Methods
+  ### 🔹 OOPS Concepts
+    - Encapsulation
+    - Abstraction (Interface & Abstract Class)
+    - Polymorphism
+    - Inheritance
+    - Constructors
+    - Access Modifiers
+    - this, final, instanceof
+
+  ### 🔹 Data Structures & Algorithms
+    - Linked List
+    - Stack
+    - Queue
+    - HashMap & Hashing
+    - Sorting Techniques
+    - Linear Search
+    - Binary Search
+
+  ### 🔹 Advanced Java
+    - Generics
+    - Collections Framework
+    - Exception Handling
+    - Lambda Expressions
+    - Functional Interfaces
+    - Streams & Collectors
+    - Annotations
+    - Reflection
+    - Multithreading
+
+  ### 🔹 File & Data Handling
+    - CSV Handling
+    - JSON Data Processing
+
+  ### 🔹 Testing & Backend
+    - JUnit Testing
+    - JDBC (Database Connectivity)
+    - 4-Layer Architecture
+
+  ### 🔹 Tools & Version Control
+    - Git & GitHub
+    - Merge Conflict Resolution
 
 ## 📅 Week 1 Progress
 
@@ -318,8 +362,52 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
   - Lambda Expressions
 - Learned Java Streams concepts
 
-### ⏳ Week 7 Status
-- Week 7 is currently in progress
+### Day 4 – Stream API & Collectors
+- Submitted Stream API assignments
+- Solved scenario-based problem:
+  - Factory Robot Hazard Analyzer
+- Learned Collectors concept in Streams
+
+### Day 5 – Design Patterns
+- Solved scenario-based problem:
+  - Online Classroom Attendance Tracker
+- Learned Design Pattern concepts
+
+### Day 6 – Multithreading
+- Solved scenario-based problems:
+  - Employee Leave Management System
+  - Ocean Fleet Problem
+- Learned Multithreading concept in Java
+
+### ✅ Week 7 Completion Status
+- Successfully completed Week 7
+- Gained strong understanding of:
+  - JSON data handling
+  - Lambda Expressions
+  - Functional Interfaces
+  - Streams & Collectors
+  - Design Patterns
+  - Multithreading
+- Implemented multiple real-world scenario-based systems
+---
+## 📅 Week 8 Progress
+
+### Day 1 – Multithreading & JDBC
+- Completed multithreading assignment
+- Learned JDBC concepts
+- Understood database connectivity using Java
+
+### Day 2 – Mock Test
+- Attempted Mock Test M1
+- Evaluated understanding of core Java concepts
+
+### Day 3 – JDBC Project Submission
+- Submitted JDBC-based Health Clinic project
+- Implemented database operations using JDBC
+- Wrote and tested test cases
+
+### ⏳ Week 8 Status
+- Week 8 is currently in progress
 - Remaining topics and submissions will be updated
 
 
