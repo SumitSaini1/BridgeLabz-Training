@@ -15,13 +15,24 @@ public class AddressBookManagementSystem {
 		do {
 			System.out.println("What Would You want to do:");
 			System.out.println("0. Exit Book Address ");
-			System.out.println("1. Create Address Book"); // NEW
-			System.out.println("2. Select Address Book"); // NEW
+			System.out.println("1. Create Address Book"); 
+			System.out.println("2. Select Address Book"); 
 			System.out.println("3. Add New contact");
 			System.out.println("4. Edit Contact ");
 			System.out.println("5. Display Contacts ");
 			System.out.println("6. Delete a Person ");
 			System.out.println("7. Search Person by City");
+			System.out.println("8. View Persons by City(Dictionary)");
+			System.out.println("9. View Persons by State(Dictionary)");
+			System.out.println("10. Count person By City Name");
+			System.out.println("11. Count person By StateName");
+			System.out.println("12. Sort Contact BookByName");
+			System.out.println("13. Sort Contact By City");
+			System.out.println("14. Sort Contact By State");
+			System.out.println("15. Save Address Book to File");
+			System.out.println("16. Load Address Book from File");
+			System.out.println("17. Export Address Book to CSV");
+			System.out.println("18. Import Address Book from CSV");
 
 			String firstName;
 			String lastName;
@@ -230,18 +241,88 @@ public class AddressBookManagementSystem {
 						System.out.println("Contact Not Found");
 					}
 					break;
-				//UC 8
+				// UC 8
 				case 7:
 					System.out.print("Enter City Name: ");
 					city = input.nextLine();
 					service.searchPersonByCity(city);
 					break;
+				// UC -9
+				case 8:
+					System.out.println("Enter city name:");
+					city = input.nextLine();
+					service.viewPersonByCity(city);
+					break;
+				// UC-9
+				case 9:
+					System.out.println("Enter city State:");
+					state = input.nextLine();
+					service.viewPersonByState(state);
+					;
+					break;
+				// UC 10
+				case 10:
+					System.out.println("Enter city name to count:");
+					city = input.nextLine();
+					service.countPersonByCity(city);
 
-				
+					break;
+				// UC 10:
+				case 11:
+					System.out.println("Enter city State:");
+					state = input.nextLine();
+					service.countPersonByState(state);
+					;
+					break;
+				// UC 11:
+				case 12:
+					System.out.println("Enter Book name:");
+					String book = input.nextLine();
+					service.sortContactBookByNameUsingStream(book);
+					break;
+				// UC 12:
+				case 13:
+					System.out.println("Enter Book Name to sort by city:");
+					bookName = input.nextLine();
+					service.sortContactsByCity(bookName);
+					break;
+				// UC 12:
+				case 14:
+					System.out.println("Enter Book Name to sort by State:");
+					bookName = input.nextLine();
+					service.sortContactsByState(bookName);
+					break;
+				case 15:
+					if (currentBook == null) {
+						System.out.println("Please select an Address Book first");
+						break;
+					}
+					service.writeAddressBookToFile(currentBook);
+					break;
 
-				default:
-					System.out.println("Invalid Input");
-					continue;
+				case 16:
+					if (currentBook == null) {
+						System.out.println("Please select an Address Book first");
+						break;
+					}
+					service.readAddressBookFromFile(currentBook);
+					break;
+
+				case 17:
+					if (currentBook == null) {
+						System.out.println("Please select an Address Book first");
+						break;
+					}
+					service.writeAddressBookToCSV(currentBook);
+					break;
+
+				case 18:
+					if (currentBook == null) {
+						System.out.println("Please select an Address Book first");
+						break;
+					}
+					service.readAddressBookFromCSV(currentBook);
+					break;
 
 			}
 
