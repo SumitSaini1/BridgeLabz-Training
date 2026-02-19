@@ -402,13 +402,54 @@ The goal is to strengthen core programming concepts, problem-solving skills, and
 - Evaluated understanding of core Java concepts
 
 ### Day 3 – JDBC Project Submission
-- Submitted JDBC-based Health Clinic project
+- Submitted UseCases JDBC-based Health Clinic 
 - Implemented database operations using JDBC
-- Wrote and tested test cases
 
-### ⏳ Week 8 Status
-- Week 8 is currently in progress
-- Remaining topics and submissions will be updated
+### Day 4 – Health Clinic Use Cases
+- Worked on Health Clinic use cases
+- Solved scenario-based problems related to clinic management
+- Improved understanding of database operations and system flow
+
+### Day 5 – Scenario-Based Problem
+- Solved scenario problem:
+  - Online Course Enrollment Analyzer
+- Applied core Java and data handling concepts
+
+### Day 6 – Advanced Scenario Problems
+- Solved scenario-based systems:
+  - Disaster Relief Resources Allocation System
+  - Smart Water Tank Monitoring System
+- Focused on applying problem-solving and system design concepts
+
+### ✅ Week 8 Completion Status
+- Successfully completed Week 8
+- Strengthened JDBC and database concepts
+- Solved multiple real-world scenario-based systems
+- Improved analytical and system design thinking
+
+---
+## 📅 Week 9 Progress
+
+### Day 1 – Employee Wage & Spring Introduction
+- Solved scenario-based problem:
+  - Employee Wage Computation (Use Cases)
+- Learned basic concepts of Spring Framework
+- Understood use case implementation approach
+
+### Day 2 – Mock Test & Address Book
+- Attempted Mock Test
+- Solved Address Book scenario problems
+- Implemented use cases for Address Book system
+
+### Day 3 – New Project Initiation
+- Started new project:
+  - Quality Measurement App
+- Planned project structure and requirements
+- Applied object-oriented design principles
+
+### ⏳ Week 9 Status
+- Week 9 is currently in progress
+
 
 
 
